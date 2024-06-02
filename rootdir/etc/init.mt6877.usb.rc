@@ -30,7 +30,6 @@ on post-fs
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
 
     setprop sys.usb.mtp.device_type 3
-    setprop sys.usb.mtp.batchcancel true
 
     # ncm function
     mkdir /config/usb_gadget/g1/functions/ncm.gs9
