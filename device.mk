@@ -60,10 +60,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
+    libunwindstack.vendor \
     libalsautils \
     libtinycompress \
     libdynproc \
-    libhapticgenerator
+    libhapticgenerator \
+    libsqlite.vendor \
 
 PRODUCT_PACKAGES += \
     XiaomiDolby \
@@ -84,6 +86,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.6.vendor
+
+PRODUCT_PACKAGES += \
+    libcamera_metadata.vendor \
+    libpng.vendor
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -110,6 +116,9 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libutils-v32
 
+PRODUCT_PACKAGES += \
+    libutilscallstack.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
@@ -135,6 +144,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libexpat.vendor
 
 # Health
 PRODUCT_PACKAGES += \
