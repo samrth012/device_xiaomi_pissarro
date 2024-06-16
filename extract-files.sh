@@ -66,6 +66,9 @@ function blob_fixup {
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
             ;;
+        system_ext/lib64/libsource.so)
+            grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
         vendor/bin/mnld|\
         vendor/lib*/libaalservice.so|\
         vendor/lib64/libcam.utils.sensorprovider.so)
