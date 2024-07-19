@@ -7,7 +7,7 @@ rm -rf device/mediatek/sepolicy_vndr
 
 echo 'Cloning Vendor tree [1/5]'
 # vendor/xiaomi/pissarro
-git clone https://github.com/pissarro-dev/vendor_xiaomi_pissarro.git -b thirtee vendor/xiaomi/pissarro
+git clone https://github.com/pissarro-dev/vendor_xiaomi_pissarro.git -b thirteen vendor/xiaomi/pissarro
 
 echo 'DONE'
 
